@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 @Component({
   selector: 'app-aside-icons',
-  imports: [],
+  imports: [MatSlideToggleModule, MatIconModule],
   templateUrl: './aside-icons.html',
   styleUrl: './aside-icons.scss'
 })
 export class AsideIcons {
-  icons = ['icon pi pi-home', 'icon pi pi-folder', 'icon pi pi-clock', 'icon pi pi-cog'];
+  icons = ['home', 'folder', 'schedule', 'import_contacts', 'settings'];
   visible: boolean = false;
 
   showDialog() {

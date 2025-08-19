@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     color: white;
+    width: 100%;
 
     .iconsBar {
         display: flex;
@@ -12,9 +13,11 @@
         justify-content: center;
         gap: 3rem;
 
-        .icon {
+        .iconUnused {
             opacity: 0.6;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            width: 2rem;
+            height: 2rem;
             cursor: pointer;
         }
 
@@ -24,7 +27,9 @@
     }
 
     .logOutIcon {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
         cursor: pointer;
     }
 }
