@@ -1,0 +1,30 @@
+.iconsContainerBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+    .iconsBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        .icon {
+            opacity: 0.6;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .selectedIcon {
+            opacity: 1;
+        }
+    }
+
+    .logOutIcon {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}

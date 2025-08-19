@@ -1,1 +1,11 @@
-<p>aside-icons works!</p>
+<main class="iconsContainerBar">
+    <div class="d-flex iconsBar">
+        <img class="w-100" src="assets/logo.png" alt="logo">
+        @for (icon of icons; track $index) {
+        <i class="{{ icon }}" [class.selectedIcon]="(activeIndex === $index)" (click)="setActive($index)"></i>
+        }
+    </div>
+    <div class="d-flex">
+        <i class="pi pi-sign-out logOutIcon" (click)="showDialog()"></i>
+    </div>
+</main>
